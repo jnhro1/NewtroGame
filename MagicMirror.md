@@ -56,15 +56,15 @@
 > $ ./installer/install.sh <Enter>  
   
 ### 4-2. 매직미러 어시스턴트 설치  
-> $ cd ~/MagicMirror/modules/ <Enter>
-> $ git clone https://github.com/eouia/MMM-AssistantMk2 <Enter>
-> $ cd MMM-AssistantMk2 <Enter>
-> $ npm install <Enter>
-> $ cd scripts <Enter>
-> $ chmod +x *.sh <Enter>
-> $ cd .. <Enter>
-> $ npm install --save-dev electron-rebuild <Enter>
-> $ ./node_modules/.bin/electron-rebuild <Enter>(시간이 매우 오래 걸립니다.)
+> $ cd ~/MagicMirror/modules/ <Enter>  
+> $ git clone https://github.com/eouia/MMM-AssistantMk2 <Enter>  
+> $ cd MMM-AssistantMk2 <Enter>  
+> $ npm install <Enter>  
+> $ cd scripts <Enter>  
+> $ chmod +x *.sh <Enter>  
+> $ cd .. <Enter>  
+> $ npm install --save-dev electron-rebuild <Enter>  
+> $ ./node_modules/.bin/electron-rebuild <Enter>(시간이 매우 오래 걸립니다.)  
   
 ## 5. 구글 어시스턴트 모듈  
 * 새로운 홈페이지를 열어서 https://console.actions.google.com 에 들어간다.
@@ -73,8 +73,7 @@
 * 새로운 프로젝트를 성공적으로 만들었으면 https://console.cloud.google.com에 들어간다.
 * 구글 클라우드 플랫폼에 들어가면 오른쪽 상단에 있는 생성된 프로젝트를 선택한다.
 * 구글 클라우드 플랫폼 검색창에 Google Assistant API를 검색하여 Google Assistant API를 활성화 시킨다.
-* 활성화 후 왼쪽 상단 4번째 Credentials를 눌러서 CONFIGURE CONSENT SCREEN을 누른 후 Application name와 Support email에서  
-이름과 이메일을 입력 후 저장한다.  
+* 활성화 후 왼쪽 상단 4번째 Credentials를 눌러서 CONFIGURE CONSENT SCREEN을 누른 후 Application name와 Support email에서 이름과 이메일을 입력 후 저장한다.  
 * Create credentials를 선택한 후 OAuth client ID를 만든다.
 * Applications type를 other로 선택하고 이름을 적어 생성한다.
 * OAuth client 생성하면서 생긴 팝업에서 ok를 누르고 Credentials에서 새로 생성한 OAuth 2.0 client IDs에 새로 생성한  
@@ -147,7 +146,7 @@
 		},
 	}
 },
-</code>
+</code>  
 * 한국어로 패치를 위해서 “en-US”를 “KR”로 변경을 한다.
 
 ## 7. 마이크 및 스피커 연결  
@@ -215,8 +214,8 @@ pcm.speaker {
 > $ cd ~/MagicMirror  <Enter>  
 > $ npm start  <Enter>  
 
->> 출처 및 참고 자료  
->>> https://m.blog.naver.com/swlee7077/220922548791 (레트로 파이 설정)
->>> https://cccding.tistory.com/96 (라즈비안 한글 설정)
->>> https://github.com/makepluscode/rpi-tutorial-advanced/tree/master/008-raspbian-magicmirror-google-assistant-latest (매직미러)
->>> https://github.com/makepluscode/rpi-tutorial-advanced/tree/master/008-raspbian-magicmirror-google-assistant-latest (스피커, 마이크)
+### 출처 및 참고 자료  
+> https://m.blog.naver.com/swlee7077/220922548791 (레트로 파이 설정)
+> https://cccding.tistory.com/96 (라즈비안 한글 설정)
+> https://github.com/makepluscode/rpi-tutorial-advanced/tree/master/008-raspbian-magicmirror-google-assistant-latest (매직미러)
+> https://github.com/makepluscode/rpi-tutorial-advanced/tree/master/008-raspbian-magicmirror-google-assistant-latest (스피커, 마이크)
