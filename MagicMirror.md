@@ -9,14 +9,14 @@
 
 ## 2. 라즈비안 부팅 설정하기
 ### 한글설정 하기
-1. 리눅스를 열어 한글 설치를 준비한다.  
+#### 1. 리눅스를 열어 한글 설치를 준비한다.  
 > $ sudo apt-get update <Enter>  
 > $ sudo apt-get upgrade <Enter>  
 > $ sudo apt-get install ibus <Enter>  
 > $ sudo apt-get install ibus-hangul <Enter>  
 > $ sduo apt-get install fonts-unfonts-core <Enter>  
 
-2. 기본 설정 들어가기  
+#### 2. 기본 설정 들어가기  
 * 오른쪽 상단에 라즈베리파이 모양 <클릭>  
 * 밑에서 3번째 기본설정 <클릭>  
 * 위에서 5번째 Raspberry Pi Configuration<클릭>  
@@ -31,11 +31,11 @@
 * 설정 창에서 OK버튼을 누른 후 reboot   
   
 ## 3. 매직미러 설치  
-1. node 8.11.1 버전 다운로드 (매우 중요)  
+#### 1. node 8.11.1 버전 다운로드 (매우 중요)  
 > $ curl –sL https://deb.nodesource.com/setup_8.11.1 | sudo -E bash - <Enter>  
 > $ sudo apt-get install nodejs <Enter>
 
-2. npm 6.9.0 버전 다운로드 (매우 중요)  
+#### 2. npm 6.9.0 버전 다운로드 (매우 중요)  
 > $ sudo apt-get install npm <Enter>  
 > $ sudo npm install –g npm@6.9.0 <Enter>  
 > $ sudo node –v <Enter>  
@@ -147,6 +147,7 @@
 	}
 },
 </code>  
+  
 * 한국어로 패치를 위해서 “en-US”를 “KR”로 변경을 한다.
 
 ## 7. 마이크 및 스피커 연결  
