@@ -215,7 +215,7 @@ pcm.speaker {
 > $ npm start  <Enter>  
 
 ### 출처 및 참고 자료  
-> https://m.blog.naver.com/swlee7077/220922548791 (레트로 파이 설정)
-> https://cccding.tistory.com/96 (라즈비안 한글 설정)
-> https://github.com/makepluscode/rpi-tutorial-advanced/tree/master/008-raspbian-magicmirror-google-assistant-latest (매직미러)
-> https://github.com/makepluscode/rpi-tutorial-advanced/tree/master/008-raspbian-magicmirror-google-assistant-latest (스피커, 마이크)
+> https://m.blog.naver.com/swlee7077/220922548791 (레트로 파이 설정)  
+> https://cccding.tistory.com/96 (라즈비안 한글 설정)  
+> https://github.com/makepluscode/rpi-tutorial-advanced/tree/master/008-raspbian-magicmirror-google-assistant-latest (매직미러)  
+> https://github.com/makepluscode/rpi-tutorial-advanced/tree/master/008-raspbian-magicmirror-google-assistant-latest (스피커, 마이크)  
