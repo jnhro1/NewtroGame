@@ -90,13 +90,63 @@
 * 라즈베리파이의 파일을 열어서 home/ pi/ MagicMirror/ config/ config.js 파일을 연다.  
 * config.js 파일을 연 후 밑에서 3번째, }, 이후에 아래의 소스를 붙여준 후 저장한다.  
 
-''''
-    {
-	    module: "MMM-Hotword",
-	    position: "top_right",
-	    config: {
-	    	
-''''
+
+{  
+	module: "MMM-Hotword",  
+	position: "top_right",  
+	config: {  
+		chimeOnFinish: null,  
+		mic: {  
+			recordProgram: "arecord",  
+			device: "plughw:1"  
+		},  
+		models: [  
+			{  
+				hotwords    : "smart_mirror",  
+				file        : "smart_mirror.umdl",  
+				sensitivity : "0.5",  
+			},  
+		],  
+		commands: {  
+			"smart_mirror": {  
+				notificationExec: {  
+					notification: "ASSISTANT_ACTIVATE",  
+					payload: (detected, afterRecord) => {  
+						return {profile:"default"}  
+					}  
+				},  
+				restart:false,  
+				afterRecordLimit:0  
+			}  
+		}  
+	}  
+},  
+{  
+	module: "MMM-AssistantMk2",  
+	position: "top_right",  
+	config: {  
+		deviceLocation: {  
+			coordinates: {  
+				latitude: 37.5650168, // -90.0 - +90.0  
+				longitude: 126.8491231, // -180.0 - +180.0  
+			},  
+		},  
+		record: {  
+			recordProgram : "arecord",    
+			device        : "plughw:1",  
+		},  
+		notifications: {  
+			ASSISTANT_ACTIVATED: "HOTWORD_PAUSE",  
+			ASSISTANT_DEACTIVATED: "HOTWORD_RESUME",  
+		},  
+		useWelcomeMessage: "brief today",  
+		profiles: {  
+			"default" : {  
+				lang: "en-US"  
+			}  
+		},  
+	}  
+},  
   
 * 한국어로 패치를 위해서 “en-US”를 “KR”로 변경을 한다.
 
