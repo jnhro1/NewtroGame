@@ -90,7 +90,7 @@
 * 라즈베리파이의 파일을 열어서 home/ pi/ MagicMirror/ config/ config.js 파일을 연다.  
 * config.js 파일을 연 후 밑에서 3번째, }, 이후에 아래의 소스를 붙여준 후 저장한다.  
 
-<code>
+````
 {
 	module: "MMM-Hotword",
 	position: "top_right",
@@ -147,7 +147,7 @@
 		},
 	}
 },  
-</code>    
+````
   
 * 한국어로 패치를 위해서 “en-US”를 “KR”로 변경을 한다.
 
@@ -165,7 +165,7 @@
 * 값을 확인한 후 터미널에서 다음의 명령어를 입력하여 새로운 nano 파일을 만들어준다.  
 > $ nano .asoundrc <Enter>  
 * 새로 열린 nano 파일에 다음의 소스를 입력해준다.  
-<code>
+````
  pcm.!default {
 
   type asym
@@ -199,7 +199,7 @@ pcm.speaker {
   }
 
 }
-</code>  
+
 * 조하롭게 팀은 <card number>와 <device number>가 스피커, 마이크 모두 1,0이였기 때문에 1,0을 넣었다.  
 * 스피커 설정이 확인하기 위해서는 다음의 명령어를 입력한다.  
 > $ speaker-test -t wav <Enter>  
