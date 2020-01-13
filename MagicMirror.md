@@ -89,8 +89,8 @@
 ## 6. 구글 어시스턴트 모듈 설정 값 수정  
 * 라즈베리파이의 파일을 열어서 home/ pi/ MagicMirror/ config/ config.js 파일을 연다.  
 * config.js 파일을 연 후 밑에서 3번째, }, 이후에 아래의 소스를 붙여준 후 저장한다.  
-<code>
-{
+
+''''{
 	module: "MMM-Hotword",
 	position: "top_right",
 	config: {
@@ -146,7 +146,7 @@
 		},
 	}
 },
-</code>  
+''''
   
 * 한국어로 패치를 위해서 “en-US”를 “KR”로 변경을 한다.
 
