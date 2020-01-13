@@ -90,7 +90,8 @@
 * 라즈베리파이의 파일을 열어서 home/ pi/ MagicMirror/ config/ config.js 파일을 연다.  
 * config.js 파일을 연 후 밑에서 3번째, }, 이후에 아래의 소스를 붙여준 후 저장한다.  
 
-''''{
+''''
+{
 	module: "MMM-Hotword",
 	position: "top_right",
 	config: {
